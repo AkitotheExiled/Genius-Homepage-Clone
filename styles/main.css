@@ -628,6 +628,152 @@ body > footer ul li div svg {
     display: flex;
     gap: 24px;
 }
+
+.only-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width:900px) {
+    nav, .topnav form:first-child {
+        display: none;
+    }
+    .topnav, .topnav__links a{
+        padding: 8px;
+        font-size: 10px;
+    }
+    .topnav__links a:nth-child(2) {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        gap: 16px;
+    }
+    .topnav {
+        width: 100%;
+        max-width: 100vw;
+    }
+    .topnav a {
+        height: 16px;
+
+    }
+    .mobile button {
+        background-color: #fbff66;
+        height: 16px;
+        width: 16px;
+    }
+    .only-mobile {
+        display: flex;
+    }
+    .mobile-hamburger svg, .mobile-search svg, .topnav a svg {
+
+        height: 100%;
+        width: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 0;
+        gap: 16px;
+        padding: 32px;
+    }
+    .main__article {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-height: min-content;
+    }
+
+    main > section {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    main > section .article {
+        border: none;
+        padding: 0;
+    }
+
+    main > section .type__spacing {
+        border-bottom: 2px solid black;
+    }
+
+    main > section .article__left {
+        gap: 0;
+    }
+
+    section h2 {
+        font-size: 48px;
+    }
+
+    .topCharts > header {
+        flex-direction: column;
+    }
+
+    .topCharts__filterContainer {
+        width: 278px;
+        height: 55px;
+    }
+
+    table td{
+        font-size: 12px;
+
+    }
+    section table {
+        border-collapse: separate;
+        border-spacing: 4px;
+    }
+    section table tr {
+        border: none;
+    }
+
+    .topCharts section table td:nth-child(3), section table td:nth-child(4) {
+        display: table-row;
+    }
+    .videos {
+        margin-bottom: 10%;
+    }
+    .videos > div{
+        gap: 4px;
+    }
+    .videos > div > section {
+        flex-direction: column;
+    }
+
+    section .article {
+        min-height: fit-content;
+    }
+
+    .latest .article {
+        width: fit-content;
+    }
+
+    .latest .article img {
+        width: 100%;
+    }
+
+    .community > header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .community div button {
+        margin-top: 16px;
+    }
+
+    .community header > div:nth-child(2) {
+        width: 30ch;
+    }
+    body > footer {
+        padding: 45px;
+    }
+    body > footer > header > div:first-child {
+        width: 30ch;
+    }
+
+    body > footer > header {
+        flex-direction: column;
+    }
+}
 @keyframes widen--asmidge {
     from {
         width: 278px
